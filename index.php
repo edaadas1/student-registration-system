@@ -33,16 +33,15 @@
 
         /* Bu işlemin sonucunda işlem başarılı ise 0'dan büyük bir değer dönecektir, eğer başarısız ise 0 gibi
            bir değer dönecektir. Bir eğer(if) satırı ile durumu kontrol edip ekrana bilgi mesajı yazdırıyoruz.
-        
-            if ($sonuc==0)
-                echo "Eklenemedi, kontrol ediniz";
-            else
-                echo "Başarıyla eklendi";
-          
         */
-
-        header('Location: index.php');  // Sayfayı yenilediğinde Aradığınız sayfa, girdiğiniz bilgileri kullandı. O sayfaya dönmeniz, gerçekleştirdiğiniz işlemlerin tekrarlanmasına yol açabilir. Devam etmek istiyor musunuz? yazısıyla karşılaşınca ve onayla deyince listeye bir önceki kayıdı tekrar ekliyor. Bu istemediğimiz bir şey. Bunu çözmek için yeniden aynı sayfaya yönlendirme işlemi yapıyoruz.
-
+            if ($sonuc==0){
+                echo "Eklenemedi, kontrol ediniz";
+            }
+            else{
+            header('Location: index.php');  // Sayfayı yenilediğinde Aradığınız sayfa, girdiğiniz bilgileri kullandı. O sayfaya dönmeniz, gerçekleştirdiğiniz işlemlerin tekrarlanmasına yol açabilir. Devam etmek istiyor musunuz? yazısıyla karşılaşınca ve onayla deyince listeye bir önceki kayıdı tekrar ekliyor. Bu istemediğimiz bir şey. Bunu çözmek için yeniden aynı sayfaya yönlendirme işlemi yapıyoruz.
+            }
+          
+        
         }
 
       
